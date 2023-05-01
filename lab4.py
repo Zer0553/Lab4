@@ -64,7 +64,7 @@ if det_A > diag_F:
     print('Умножение A * AT\n', mod_A)
 
     power_F = np.linalg.matrix_power(F, -1)
-    print('\Возведение матрицы F в -1 степень:\n', power_F)
+    print('Возведение матрицы F в -1 степень:\n', power_F)
 
     mod_power_F = np.dot(k, power_F)
     print('Умножение K *FT\n', mod_power_F)
@@ -75,7 +75,7 @@ else:
     print('Вычисляем выражение:(A-1 + G-FТ)*K ')
 
     power_A = np.linalg.matrix_power(A, -1)
-    print('\Возведение матрицы A в -1 степень:\n', power_A)
+    print('Возведение матрицы A в -1 степень:\n', power_A)
 
     print('Транспонированая матрица F:\n', trans_F)
 
@@ -89,9 +89,9 @@ else:
     print('Разница A-1 + G - FT:\n', pAGFT)
 
     result = np.dot(pAGFT, k)
-    print('\nУмножение на K\n', result)
+    print('Умножение на K\n', result)
 
-print('\nРезультат вычислений\n', result)
+print('Результат вычислений\n', result)
 
 
 explode = [0] * (n - 1)
